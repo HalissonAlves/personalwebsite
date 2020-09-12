@@ -1,0 +1,69 @@
+@import "../abstracts/variables";
+
+@font-face {
+  font-family: "Jaapokki";
+  src: url("../../assets/fonts/jaapokki-regular.eot") format("eot"),
+       url("../../assets/fonts/jaapokki-regular.woff") format("woff");
+}
+
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: $mainColor;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  &--image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__intro {
+    font-family: 'Jaapokki', 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+  }
+
+  &__hello {
+    color: $darkBlue;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__middle {
+
+    &--left {
+      color: white;
+      font-size: 6rem;
+      white-space: nowrap;
+    }
+
+    &--right {
+      font-size: 2.5rem;
+      color: $darkBlue;
+    }
+  }
+
+  &__frontend {
+    color: $pink;
+    font-size: 3rem;
+    width: 100%;
+    text-align: right;
+  }
+
+}
