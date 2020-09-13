@@ -1,14 +1,13 @@
-@import "./pages/index"; 
-@import "./pages/about";
-@import "./pages/blog";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 @import "./base/animations";
 @import "./base/reset";
 @import "./base/typography";
 
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-
 @import "./layout/grid";
+@import "./layout/navigation";
 
-@import "./components/navigation";
+@import "./pages/index"; 
+@import "./pages/about";
+@import "./pages/blog";
