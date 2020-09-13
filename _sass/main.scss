@@ -5,9 +5,12 @@
 @import "./base/reset";
 @import "./base/typography";
 
+@import "./components/card";
+
 @import "./layout/grid";
 @import "./layout/navigation";
 
 @import "./pages/index"; 
 @import "./pages/about";
+@import "./pages/portfolio";
 @import "./pages/blog";

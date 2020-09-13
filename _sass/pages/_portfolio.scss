@@ -1,0 +1,53 @@
+.container {
+  &__portfolio-header {
+    padding: 70px 0px 30px 0px;
+    position: relative;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__portfolio-content {
+    width: 80%;
+
+    h2 {
+      text-align: center;
+      color: $darkBlue;
+      font-size: 5rem;
+      letter-spacing: 0.2rem;
+      font-family: "Bebas Neue", cursive;
+      animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
+      margin-bottom: 2rem;
+    }
+
+    p {
+      line-height: 2;
+      font-family: "Raleway", "Times New Roman", Times, serif;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 300;
+      animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+    }
+  }
+
+  &__portfolio-header::before {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url("../../assets/images/gray_divide_mainColor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__portfolio-works {
+    // background-image: linear-gradient(to bottom right, $lightBlue, $darkBlue);
+    background-color: $darkBlue;
+    padding: 300px 0 150px 0;
+    width: 100%;
+  }
+}
