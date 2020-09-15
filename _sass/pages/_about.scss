@@ -1,13 +1,17 @@
 .container {
-  background-color: $mainColor;
-  height: 94vh;
-  position: relative;
-  overflow: hidden;
+
+  &--darkBlue{
+    background-color: $darkBlue;
+    height: 94vh;
+    position: relative;
+    overflow: hidden;
+  }
 
   &__image {
     position: absolute;
     left: 0;
     top: 0;
+    width: $faceImageFullHD;
     animation: fadeIn 1s ease-out;
   }
 
@@ -25,7 +29,7 @@
   &__title {
     font-family: "Bebas Neue", "Times New Roman", Times, serif;
     font-size: 5.5rem;
-    color: $darkBlue;
+    color: $mustard;
     font-weight: 300;
     margin-bottom: 2rem;
     animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
@@ -45,13 +49,13 @@
       font-style: italic;
     }
 
-    &--darkBlue {
-      color: $darkBlue;
+    &--lightBlue {
+      color: $lightBlue;
       font-style: italic;
     }
 
-    &--lightBlue {
-      color: $lightBlue;
+    &--pink {
+      color: $pink;
       font-style: italic;
     }
   }

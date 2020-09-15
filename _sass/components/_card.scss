@@ -3,6 +3,8 @@
   -moz-perspective: 100rem;
   position: relative;
   height: 50rem;
+  border-radius: 3rem;
+  font-family: "Raleway", "Times New Roman", Times, serif;
 
   &__side {
     background-color: white;
@@ -15,6 +17,7 @@
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    overflow: hidden;
 
     &--front {
       background-color: white;
@@ -34,5 +37,55 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  /* FRONT SIDE STYLING */
+
+  &__picture {
+    background-size: cover;
+    background-position: top center;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: url('../images/personalWebsite.png');
+      height: 23rem;
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        
+        &:not(:last-child) {
+          border-bottom: 1px solid $whiteGrey;
+        }
+      }
+
+    }
+  }
+
+  /* BACK SIDE STYLING */
+
+  &__cta {
+    position: absolute;
+    @include centralizeContent;
+    width: 70%;
+    text-align: center;
+  }
+
+  &__upper {
+    color: $white;
+    padding: 2rem;
   }
 }
