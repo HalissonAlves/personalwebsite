@@ -4,8 +4,8 @@
 
 $mainColor: rgb(6, 214, 160);
 $secondaryColor: rgb(7, 153, 114);
-$lightBlue: #118ab2;
-$darkBlue: #073b4c;
+$lightBlue: rgb(17, 138, 178);
+$darkBlue: rgb(7, 59, 76);
 $greyBlue: #eaedee;
 $whiteGrey: #eee;
 $white: #fff;
@@ -20,6 +20,13 @@ $pink: #ef476f;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+/*
+** FONTS
+*/
+
+$titleFont: "Bebas Neue", "Times New Roman", "Arial";
+$mainFont: "Nunito", "Times New Roman", "Arial";
 
 /* 
 ** GLOBAL VARIABLES

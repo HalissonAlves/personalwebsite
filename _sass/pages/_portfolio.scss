@@ -2,7 +2,7 @@
   &__portfolio-header {
     padding: 70px 0px 70px 0px;
     position: relative;
-    background-color: $darkBlue;
+    background-color: $mainColor;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +14,19 @@
 
     h2 {
       text-align: center;
-      color: $mustard;
-      font-size: 5rem;
+      color: $darkBlue;
+      font-size: 6rem;
       letter-spacing: 0.2rem;
-      font-family: "Bebas Neue", cursive;
+      font-family: $titleFont;
       animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
       margin-bottom: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
     }
 
     p {
       line-height: 2;
-      font-family: "Raleway", "Times New Roman", Times, serif;
+      font-family: $mainFont;
       font-size: 2.5rem;
       color: white;
       font-weight: 300;

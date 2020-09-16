@@ -4,7 +4,7 @@
   position: relative;
   height: 50rem;
   border-radius: 3rem;
-  font-family: "Raleway", "Times New Roman", Times, serif;
+  font-family: $mainFont;
 
   &__side {
     background-color: white;
