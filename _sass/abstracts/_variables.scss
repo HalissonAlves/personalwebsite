@@ -3,10 +3,16 @@
 */
 
 $mainColor: rgb(6, 214, 160);
-$lightBlue: #118AB2;
-$darkBlue: #073B4C;
-$mustard: #FFD166;
-$pink: #EF476F;
+$secondaryColor: rgb(7, 153, 114);
+$lightBlue: rgb(17, 138, 178);
+$darkBlue: rgb(7, 59, 76);
+$greyBlue: #eaedee;
+$whiteGrey: #eee;
+$darkGrey: #555;
+$white: #fff;
+$black: #000;
+$mustard: #ffd166;
+$pink: #ef476f;
 
 /* 
 ** GRID
@@ -15,3 +21,16 @@ $pink: #EF476F;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+/*
+** FONTS
+*/
+
+$titleFont: "Bebas Neue", "Times New Roman", "Arial";
+$mainFont: "Nunito", "Times New Roman", "Arial";
+
+/* 
+** GLOBAL VARIABLES
+*/
+
+$faceImageFullHD: 650px;

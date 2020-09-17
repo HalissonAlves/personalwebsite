@@ -1,0 +1,42 @@
+.container {
+  &__portfolio-header {
+    padding: 70px 0px 70px 0px;
+    position: relative;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__portfolio-content {
+    width: 80%;
+
+    h2 {
+      text-align: center;
+      color: $darkBlue;
+      font-size: 6rem;
+      letter-spacing: 0.2rem;
+      font-family: $titleFont;
+      animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
+      margin-bottom: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 2;
+      font-family: $mainFont;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 300;
+      animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+    }
+  }
+
+  &__portfolio-works {
+    background-color: $greyBlue;
+    padding: 70px 0 70px 0;
+    width: 100%;
+  }
+}
