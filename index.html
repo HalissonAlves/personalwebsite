@@ -5,10 +5,17 @@ title: Home
 
 {% include navigation.html %}
 <section class="container">
-  <img src="/assets/images/facePhoto.png" alt="Halisson's Face on the left of the page" class="container__image">
+  <picture class="container__image--index">
+    <source srcset="/assets/images/background-face-HD.png" media="(max-height: 720px)">
+    <source srcset="/assets/images/background-face-FHD.png" media="(max-height: 1080px)">
+    <img srcset="/assets/images/background-face-4k.png" alt="Halisson's Face on the left of the page">
+  </picture>
   <div class="container__intro">
     <h3 class="container__hello">Hello! My name is</h3>
-    <h1 class="container__middle container__middle-left">HALISSON ALVES, <span class="container__middle container__middle-right">I am a</span></h1>
+    <div class="container__middle">
+      <h1 class="container__middle-left">HALISSON ALVES</h1>
+      <span class="container__middle-right">I am a</span>
+    </div>
     <h3 class="container__frontend">FRONT-END DEVELOPER</h3>
   </div>
 </section>

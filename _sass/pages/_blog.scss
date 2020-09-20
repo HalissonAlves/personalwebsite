@@ -6,6 +6,8 @@
   }
 
   &__blog-header {
+    height: auto;
+    overflow: auto;
     padding: 70px 0px 70px 0px;
     position: relative;
     background-color: $darkBlue;
@@ -14,6 +16,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      padding: 3em 0;
+    }
   }
 
   /* LIST OF POSTS */
@@ -39,6 +45,11 @@
       color: white;
       font-weight: 200;
       animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+
+      @include respond(phone) {
+        font-size: 1.3em;
+        text-align: center;
+      }
     }
   }
 
@@ -85,7 +96,7 @@
     padding: 0.8rem 2rem;
     background-color: $darkBlue;
     text-decoration: none;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   &__blog-readMore:hover {

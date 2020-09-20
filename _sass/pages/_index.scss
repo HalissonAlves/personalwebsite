@@ -4,12 +4,29 @@
   position: relative;
   overflow: hidden;
 
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
   &__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: $faceImageFullHD;
-    animation: fadeIn 1s ease-out;
+    &--index {
+      position: absolute;
+      width: $faceImageFullHD;
+      animation: fadeIn 1s ease-out;
+      opacity: 0.1;
+
+      @include respond(tab-land) {
+        left: -40px;
+      }
+
+      @include respond(tab-port) {
+        left: -80px;
+      }
+
+      @include respond(phone) {
+        left: -120px;
+      }
+    }
   }
 
   &__intro {
@@ -21,6 +38,10 @@
     transform: translate(-50%, -50%);
     line-height: 1.2;
     backface-visibility: hidden;
+
+    @include respond(tab-land) {
+      @include centralizeContent;
+    }
   }
 
   &__hello {
@@ -30,22 +51,54 @@
     text-align: left;
     margin-left: 0.15rem;
     animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
+
+    @include respond(phone) {
+      text-align: center;
+      font-size: 2.5em;
+      background-color: white;
+    }
   }
 
   &__middle {
     animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      animation: none;
+    }
 
     &-left {
       color: white;
       font-size: 9.4rem;
       white-space: nowrap;
       text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px;
+      margin-right: 1rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        font-size: 3.75em;
+        animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+      }
     }
 
     &-right {
-      font-size: 4.5rem;
+      font-size: 4rem;
       color: $darkBlue;
       text-shadow: none;
+      white-space: nowrap;
+      font-weight: bold;
+
+      @include respond(phone) {
+        background-color: white;
+        font-size: 2.5em;
+        width: 100%;
+        text-align: center;
+        animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
+      }
     }
   }
 
@@ -56,5 +109,11 @@
     text-align: right;
     animation: moveInLeft 1s cubic-bezier(0.45, 0, 0.55, 1);
     text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+
+    @include respond(phone) {
+      text-align: center;
+      font-size: 2.5em;
+      animation: moveInRight 1s cubic-bezier(0.45, 0, 0.55, 1);
+    }
   }
 }
