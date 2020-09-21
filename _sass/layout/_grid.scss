@@ -21,6 +21,7 @@
 
   @include respond(tab-port) {
     width: 90%;
+    margin-bottom: 0;
   }
 
   [class^="col-"] {
