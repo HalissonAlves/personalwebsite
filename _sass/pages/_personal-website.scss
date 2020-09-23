@@ -95,7 +95,7 @@
      */
 
     &-section02 {
-      padding: 70px 0px 70px 0px;
+      padding: 100px 0px 100px 0px;
       background-color: $mustard;
       height: 500px;
 
@@ -104,6 +104,27 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+      }
+
+      &-description--right {
+        font-size: 2rem;
+        color: $darkGrey;
+
+        h3 {
+          color: $pink;
+          text-align: center;
+          font-family: $titleFont;
+          font-size: 3rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      &-mock_devices {
+        background-image: url("../../assets/images/devices-mock-01.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
       }
     }
 
@@ -112,15 +133,34 @@
      */
 
     &-section03 {
-      padding: 70px 0px 70px 0px;
-      background-color: $mustard;
-      height: 500px;
+      padding: 100px 0px 100px 0px;
 
       &--row {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+      }
+
+      &-description--left {
+        font-size: 2rem;
+        color: $darkGrey;
+
+        h3 {
+          color: $pink;
+          text-align: center;
+          font-family: $titleFont;
+          font-size: 3rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      &-mock_devices {
+        background-image: url("../../assets/images/devices-mock-01.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
       }
     }
 
@@ -129,15 +169,35 @@
      */
 
     &-section04 {
-      padding: 70px 0px 70px 0px;
-      background-color: $mustard;
-      height: 500px;
+      padding: 100px 0px 100px 0px;
+      background-color: $darkBlue;
 
       &--row {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+      }
+
+      &-description--right {
+        font-size: 2rem;
+        color: $white;
+
+        h3 {
+          color: $mustard;
+          text-align: center;
+          font-family: $titleFont;
+          font-size: 3rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      &-mock_devices {
+        background-image: url("../../assets/images/devices-mock-01.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
       }
     }
   }
